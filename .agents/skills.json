@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/skills.json",
+  "entries": [
+    {
+      "path": ".agents/skills"
+    }
+  ]
+}
