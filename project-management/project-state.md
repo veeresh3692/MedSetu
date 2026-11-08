@@ -3,9 +3,9 @@
 ## Executive Summary
 - **Project**: MediCompare India
 - **Mission**: Enable Indian consumers to identify exact medicine formulations, compare trustworthy pharmacy prices, and discover licensed nearby pharmacies.
-- **Current Phase**: **Phase 0 — Foundation & Organizational Initialization**
-- **Active Task**: `MC-000` (Initialize the MediCompare Engineering Organization)
-- **Status**: **MC-000 COMPLETE — AWAITING PRODUCT OWNER LEVEL 5 REVIEW & APPROVAL**
+- **Current Phase**: **Phase 1 — Problem Validation, Regulatory Dossier & Requirements Engineering**
+- **Active Task**: `MC-001` (Bengaluru Market Research & Validation) -> **APPROVED**; Next: `MC-002` (Regulatory Boundary & Legal Compliance Framework)
+- **Status**: **MC-000 APPROVED & MERGED | MC-001 APPROVED (GATES 1 & 8 PASSED)**
 - **Product Owner**: Individual B.Tech CSE Cybersecurity Student (Sole Authority)
 - **Orchestrator**: Elite AI Orchestrator coordinating 18 Specialist Sub-Agents and 33 Domain Skills.
 
@@ -31,7 +31,10 @@
 - [x] **Milestone 0: Organization Initialization (MC-000)**
   - Workspace inspection, Git setup, Orchestrator rules, 18 specialist agent registrations, 33 specialized skill definitions, 4 governance rule sets, project management artifacts.
 - [ ] **Milestone 1: Problem Validation, Regulatory Dossier & IEEE SRS (MC-001 to MC-004)**
-  - Problem validation in Bengaluru market, Drugs & Cosmetics + DPDP compliance boundary document, formal IEEE 830 SRS, and comprehensive Requirements Traceability Matrix.
+  - [x] MC-001: Bengaluru Retail Pharmacy Market Research & Problem Validation (Agent 03, Approved)
+  - [ ] MC-002: Drugs & Cosmetics Act + DPDP Compliance Boundary Framework (Agent 04)
+  - [ ] MC-003: Formal IEEE Std 830 Software Requirements Specification (Agent 02)
+  - [ ] MC-004: Bidirectional Requirements Traceability Matrix (Agent 02)
 - [ ] **Milestone 2: Modular Monolith Architecture & Database Design (MC-005 to MC-007)**
   - Modular monolith architecture specification (ADRs, Mermaid diagrams), PostgreSQL schema design with strict RLS, NPPA & medicine data provenance model.
 - [ ] **Milestone 3: Core Medicine Matching & Ingestion Engine (MC-008 to MC-010)**
