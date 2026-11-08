@@ -102,7 +102,8 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Acceptance Criteria**: Boundaries between Catalog, Comparison, Discovery, Pharmacy Portal, and Admin documented; ADRs created for Next.js App Router, Supabase RLS, Leaflet/OSM.
 - **Tests**: Architecture boundary linting rules, peer review.
 - **Reviewer**: AGENT 10 — Backend Engineer & AGENT 11 — Database Engineer
-- **Status**: `READY`
+- **Status**: `APPROVED`
+- **Gate Approvals**: Gate 2 (Architecture Review) - PASSED, Gate 8 (Documentation Review) - PASSED
 - **Human Approval Requirement**: Mandatory (Level 2/5).
 
 ---
@@ -117,7 +118,7 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Acceptance Criteria**: 13 initial entities with foreign keys, check constraints (`selling_price <= mrp`), composite unique constraints, automated `price_history` trigger, and RLS enabled on all tables.
 - **Tests**: Local Supabase migration dry-run, RLS permission test suite.
 - **Reviewer**: AGENT 12 — Security Engineer
-- **Status**: `BACKLOG`
+- **Status**: `READY`
 - **Human Approval Requirement**: Mandatory (Level 5 for DB execution).
 
 ---

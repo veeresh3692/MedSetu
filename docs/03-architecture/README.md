@@ -3,7 +3,8 @@
 This directory contains system architecture specifications, ADRs, database designs, ERDs, and API contracts.
 
 ## Completed Reviews:
-- [`gate-2-architecture-review.md`](file:///c:/Users/veere/Desktop/Med%20compare/docs/03-architecture/gate-2-architecture-review.md) — Gate 2 Architecture Alignment Review for IEEE SRS (`REV-GATE2-001`, APPROVED)
+- [`gate-2-architecture-review.md`](file:///c:/Users/veere/Desktop/Med%20compare/docs/03-architecture/gate-2-architecture-review.md) — Gate 2 Architecture Alignment Review for IEEE SRS (`REV-GATE2-001`, APPROVED by Agent 07)
+- [`gate-2-database-architecture-review.md`](file:///c:/Users/veere/Desktop/Med%20compare/docs/03-architecture/gate-2-database-architecture-review.md) — Gate 2 Database & RLS Architecture Review (`REV-GATE2-002`, APPROVED by Agent 11)
 
 ## Planned Documents:
 - `system-architecture.md` — Modular monolith architecture, component diagrams (MC-005)
