@@ -54,7 +54,8 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Acceptance Criteria**: Form 20/21 license verification requirements specified; Schedule H/H1/X rules codified; mandatory customer disclaimers drafted; DPDP consent and data minimization requirements formalized.
 - **Tests**: Legal citation review, peer review by Agent 12 (Security).
 - **Reviewer**: AGENT 12 — Security Engineer
-- **Status**: `READY`
+- **Status**: `APPROVED`
+- **Gate Approvals**: Gate 7 (Security Review) - PASSED, Gate 8 (Documentation Review) - PASSED
 - **Human Approval Requirement**: Mandatory before production (Level 5).
 
 ---
@@ -69,7 +70,7 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Acceptance Criteria**: All functional requirements (FR-001 through FR-050) and non-functional requirements (NFR-001 through NFR-020) uniquely numbered and verifiable.
 - **Tests**: Requirements completeness review, ambiguity scan.
 - **Reviewer**: AGENT 01 — Product Strategy & AGENT 07 — System Architect
-- **Status**: `BACKLOG`
+- **Status**: `READY`
 - **Human Approval Requirement**: Standard (Level 2).
 
 ---

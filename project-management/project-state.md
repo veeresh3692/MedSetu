@@ -4,8 +4,8 @@
 - **Project**: MediCompare India
 - **Mission**: Enable Indian consumers to identify exact medicine formulations, compare trustworthy pharmacy prices, and discover licensed nearby pharmacies.
 - **Current Phase**: **Phase 1 — Problem Validation, Regulatory Dossier & Requirements Engineering**
-- **Active Task**: `MC-001` (Bengaluru Market Research & Validation) -> **APPROVED**; Next: `MC-002` (Regulatory Boundary & Legal Compliance Framework)
-- **Status**: **MC-000 APPROVED & MERGED | MC-001 APPROVED (GATES 1 & 8 PASSED)**
+- **Active Task**: `MC-002` (Regulatory Boundary & Compliance Framework) -> **APPROVED**; Next: `MC-003` (Formal IEEE 830 SRS)
+- **Status**: **MC-000 APPROVED & MERGED | MC-001 APPROVED (GATES 1 & 8) | MC-002 APPROVED (GATES 7 & 8)**
 - **Product Owner**: Individual B.Tech CSE Cybersecurity Student (Sole Authority)
 - **Orchestrator**: Elite AI Orchestrator coordinating 18 Specialist Sub-Agents and 33 Domain Skills.
 
@@ -32,7 +32,7 @@
   - Workspace inspection, Git setup, Orchestrator rules, 18 specialist agent registrations, 33 specialized skill definitions, 4 governance rule sets, project management artifacts.
 - [ ] **Milestone 1: Problem Validation, Regulatory Dossier & IEEE SRS (MC-001 to MC-004)**
   - [x] MC-001: Bengaluru Retail Pharmacy Market Research & Problem Validation (Agent 03, Approved)
-  - [ ] MC-002: Drugs & Cosmetics Act + DPDP Compliance Boundary Framework (Agent 04)
+  - [x] MC-002: Drugs & Cosmetics Act + DPDP Compliance Boundary Framework (Agent 04, Approved)
   - [ ] MC-003: Formal IEEE Std 830 Software Requirements Specification (Agent 02)
   - [ ] MC-004: Bidirectional Requirements Traceability Matrix (Agent 02)
 - [ ] **Milestone 2: Modular Monolith Architecture & Database Design (MC-005 to MC-007)**
