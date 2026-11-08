@@ -4,8 +4,8 @@
 - **Project**: MediCompare India
 - **Mission**: Enable Indian consumers to identify exact medicine formulations, compare trustworthy pharmacy prices, and discover licensed nearby pharmacies.
 - **Current Phase**: **Phase 2 — Modular Monolith Architecture & Database Design**
-- **Active Task**: `MC-004` (Bidirectional Requirements Traceability Matrix) -> **APPROVED**; Next: `MC-005` (Modular Monolith System Architecture & ADRs)
-- **Status**: **MILESTONE 1 COMPLETE (MC-000, MC-001, MC-002, MC-003, MC-004 ALL APPROVED) | READY FOR MC-005**
+- **Active Task**: `MC-005` (Modular Monolith System Architecture & ADRs) -> **APPROVED**; Next: `MC-006` (PostgreSQL Relational Schema & Supabase RLS Architecture)
+- **Status**: **MC-005 APPROVED (GATES 2 & 8 PASSED) | READY FOR MC-006**
 - **Product Owner**: Individual B.Tech CSE Cybersecurity Student (Sole Authority)
 - **Orchestrator**: Elite AI Orchestrator coordinating 18 Specialist Sub-Agents and 33 Domain Skills.
 
@@ -36,7 +36,9 @@
   - [x] MC-003: Formal IEEE Std 830 Software Requirements Specification (Agent 02, Approved)
   - [x] MC-004: Bidirectional Requirements Traceability Matrix (Agent 02, Approved by Agent 18)
 - [ ] **Milestone 2: Modular Monolith Architecture & Database Design (MC-005 to MC-007)**
-  - Modular monolith architecture specification (ADRs, Mermaid diagrams), PostgreSQL schema design with strict RLS, NPPA & medicine data provenance model.
+  - [x] MC-005: Modular Monolith System Architecture & ADRs (Agent 07, Approved by Agent 10 & Agent 11)
+  - [ ] MC-006: PostgreSQL Schema & Supabase RLS Policies (Agent 11)
+  - [ ] MC-007: NPPA & Medicine Catalog Provenance Specification (Agent 05)
 - [ ] **Milestone 3: Core Medicine Matching & Ingestion Engine (MC-008 to MC-010)**
   - Entity resolution, active salt & release profile matching algorithm, Zod validation pipelines, CSV ingestion test harness.
 - [ ] **Milestone 4: Backend API Services & Price Comparison Logic (MC-011 to MC-013)**

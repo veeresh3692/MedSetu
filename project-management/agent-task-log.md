@@ -116,4 +116,27 @@ This log tracks all assignments executed by the Elite AI Orchestrator and specia
   - `docs/02-requirements/gate-8-9-rtm-integration-review.md` (Formal review and sign-off report `REV-GATE8-9-001`)
 - **Notes**: Milestone 1 (Problem Validation, Regulatory Dossier & IEEE SRS) is now 100% complete and verified. Unblocks Milestone 2: Modular Monolith Architecture & Database Design (`MC-005`).
 
+---
+
+### Entry MC-005-01: Modular Monolith Architecture & ADR Engineering Review
+- **Task ID**: `MC-005`
+- **Assigned Author**: AGENT 07 — System Architect
+- **Assigned Reviewers**: AGENT 10 — Backend Engineer (Gate 2/8) & AGENT 11 — Database Engineer (Gate 2)
+- **Assigned Skills**: `system-architecture`, `api-contract-design`, `backend-api-engineering`, `postgres-database-engineering`
+- **Start Timestamp**: `2026-11-08T14:00:00+05:30`
+- **Completion Timestamp**: `2026-11-08T14:22:00+05:30`
+- **Status**: **APPROVED (Gate 2 & Gate 8 Passed)**
+- **Quality Gates Evaluated**:
+  - **Gate 2 (Architecture Review)**: **PASSED** — Agent 10 and Agent 11 independently reviewed `DOC-ARCH-001` and foundational ADRs (ADR-001 to ADR-005). Confirmed clean layered decoupling, serverless Route Handler facades, pure domain services, spherical Haversine spatial indexing (<100ms), and physical separation of price datasets (NPPA, MRP, Pharmacy Offers, Price History).
+  - **Gate 8 (Documentation Review)**: **PASSED** — Comprehensive C4 model, sequence diagrams, directory hierarchy, and ADR repository (`docs/03-architecture/adrs/`).
+- **Deliverables Generated / Reviewed**:
+  - `docs/03-architecture/system-architecture.md` (Approved by Agent 10 & Agent 11)
+  - `docs/03-architecture/adrs/ADR-001-modular-monolith.md`
+  - `docs/03-architecture/adrs/ADR-002-spatial-leaflet-osm.md`
+  - `docs/03-architecture/adrs/ADR-003-data-provenance-separation.md`
+  - `docs/03-architecture/adrs/ADR-004-non-clinical-boundary.md`
+  - `docs/03-architecture/adrs/ADR-005-supabase-rls-auth.md`
+  - `docs/03-architecture/gate-2-database-architecture-review.md` (Sign-off by Agent 11)
+- **Notes**: Architecture baseline formally locked. Unblocks Task MC-006 (PostgreSQL Relational Schema & Supabase RLS Implementation).
+
 
