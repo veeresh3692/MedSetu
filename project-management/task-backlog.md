@@ -81,12 +81,13 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Agent**: AGENT 02 — Business Analyst
 - **Required Skills**: `requirements-traceability`
 - **Inputs**: SRS (MC-003).
-- **Deliverables**: `docs/02-requirements/rtm.md`
+- **Deliverables**: `docs/02-requirements/rtm.md`, `docs/02-requirements/gate-8-9-rtm-integration-review.md`
 - **Dependencies**: MC-003
 - **Acceptance Criteria**: 100% of functional requirements mapped to planned test cases and architectural modules. Zero orphan requirements.
-- **Tests**: RTM automated consistency check.
+- **Tests**: RTM automated consistency check, bidirectional traceability audit.
 - **Reviewer**: AGENT 18 — Release and Integration Manager
-- **Status**: `READY`
+- **Status**: `APPROVED`
+- **Gate Approvals**: Gate 8 (Documentation Review) - PASSED, Gate 9 (Integration Readiness) - PASSED
 - **Human Approval Requirement**: Standard (Level 2).
 
 ---
@@ -95,13 +96,13 @@ Statuses: `BACKLOG` | `READY` | `IN_PROGRESS` | `BLOCKED` | `REVIEW` | `REJECTED
 - **Objective**: Establish modular monolith architecture specifications, container/component diagrams in Mermaid, and foundational Architecture Decision Records (ADRs).
 - **Agent**: AGENT 07 — System Architect
 - **Required Skills**: `system-architecture`, `api-contract-design`
-- **Inputs**: SRS (MC-003), Tech Stack guidelines.
+- **Inputs**: SRS (MC-003), RTM (MC-004), Tech Stack guidelines.
 - **Deliverables**: `docs/03-architecture/system-architecture.md`, `docs/03-architecture/adrs/*.md`
-- **Dependencies**: MC-003
+- **Dependencies**: MC-003, MC-004
 - **Acceptance Criteria**: Boundaries between Catalog, Comparison, Discovery, Pharmacy Portal, and Admin documented; ADRs created for Next.js App Router, Supabase RLS, Leaflet/OSM.
 - **Tests**: Architecture boundary linting rules, peer review.
 - **Reviewer**: AGENT 10 — Backend Engineer & AGENT 11 — Database Engineer
-- **Status**: `BACKLOG`
+- **Status**: `READY`
 - **Human Approval Requirement**: Mandatory (Level 2/5).
 
 ---
