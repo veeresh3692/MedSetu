@@ -1,0 +1,41 @@
+name: MediCompare CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  quality-gates:
+    name: Quality Gates (TypeCheck & Automated Tests)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Gate 4 — TypeScript Type Check
+        run: npx tsc --noEmit
+
+      - name: Gate 5 — Automated Unit & Integration Tests (Vitest)
+        run: npm run test
+
+      - name: Gate 7 — Secret Hygiene Scan
+        run: |
+          echo "Checking for committed secret files..."
+          if [ -f ".env" ] || [ -f ".env.local" ] || [ -f ".env.production" ]; then
+            echo "ERROR: Committed environment file detected! Aborting build."
+            exit 1
+          fi
+          echo "Secret hygiene scan passed."
+

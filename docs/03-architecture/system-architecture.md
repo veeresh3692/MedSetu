@@ -4,8 +4,8 @@
 **Task ID:** `MC-005`  
 **Author:** AGENT 07 — System Architect  
 **Reviewers:** AGENT 10 — Backend Engineer & AGENT 11 — Database Engineer  
-**Status:** `REVIEW`  
-**Version:** `1.0.0`  
+**Status:** `APPROVED`  
+**Version:** `1.1.0`  
 **Date:** 2026-11-08  
 **Baseline Standard:** IEEE 1471 / ISO/IEC/IEEE 42010 Architecture Description  
 
