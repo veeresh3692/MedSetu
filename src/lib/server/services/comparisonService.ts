@@ -665,7 +665,7 @@ export async function getMedicineComparison(
         observationTimestamp: o.observation_timestamp,
       };
     })
-    .filter((offer) => {
+    .filter((offer: any) => {
       // If user coords and radius are provided, filter within radius
       if (offer.pharmacy.distanceKm !== null && radiusKm) {
         return offer.pharmacy.distanceKm <= radiusKm;
@@ -674,7 +674,7 @@ export async function getMedicineComparison(
     });
 
   // Sort offers
-  offers.sort((a, b) => {
+  offers.sort((a: any, b: any) => {
     if (sortBy === 'distance' && a.pharmacy.distanceKm !== null && b.pharmacy.distanceKm !== null) {
       return a.pharmacy.distanceKm - b.pharmacy.distanceKm;
     }
@@ -712,4 +712,3 @@ export async function getMedicineComparison(
     statutoryDisclaimer: STATUTORY_DISCLAIMER,
   };
 }
-
