@@ -285,8 +285,7 @@ export function NearbyPharmacyList({
           pharmacyName={selectedOfferForReport.pharmacy.businessName}
           medicineId={medicineId}
           medicineName={medicineName}
-          currentReportedPrice={selectedOfferForReport.sellingPrice}
-          isOpen={true}
+          listedPrice={selectedOfferForReport.sellingPrice}
           onClose={() => setSelectedOfferForReport(null)}
         />
       )}
