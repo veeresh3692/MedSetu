@@ -4,6 +4,8 @@
 // Governance: AGENTS.md, FR-007, FR-012, FR-015, FR-016, DOC-UI-001 (MC-010)
 // ==============================================================================
 
+'use client';
+
 import React, { useState } from 'react';
 import { PriceReportModal } from '../dispute/PriceReportModal';
 
