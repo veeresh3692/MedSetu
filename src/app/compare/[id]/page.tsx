@@ -14,6 +14,7 @@ import { GovernmentPriceCard } from '@/components/medicine/GovernmentPriceCard';
 import { BioequivalentAlternatives } from '@/components/medicine/BioequivalentAlternatives';
 import { NearbyPharmacyList } from '@/components/pharmacy/NearbyPharmacyList';
 import { PharmacyMap } from '@/components/pharmacy/PharmacyMap';
+import { UserLocationBar } from '@/components/location/UserLocationBar';
 import { getMedicineComparison } from '@/lib/server/services/comparisonService';
 
 interface ComparePageProps {
@@ -89,7 +90,16 @@ export default async function CompareMedicinePage({
           />
         )}
 
-        {/* 4. Local Pharmacy Comparison & Spatial Map View */}
+        {/* 4. User Location & Delivery Speed Controller */}
+        <UserLocationBar
+          currentLat={userLat}
+          currentLng={userLng}
+          currentSortBy={sortBy}
+          currentRadius={radius}
+          medicineName={targetMedicine.brandName}
+        />
+
+        {/* 5. Local Pharmacy Comparison & Spatial Map View */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           {/* Pharmacy Offers List (7 Cols on Desktop) */}
           <div className="lg:col-span-7">

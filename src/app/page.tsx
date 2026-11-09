@@ -34,11 +34,23 @@ export default function HomePage() {
             <p className="mx-auto max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed">
               Find the lowest trustworthy price for your exact prescribed formulation. Discover
               bioequivalent PMBJP Jan Aushadhi alternatives and verified neighborhood chemists in
-              Bengaluru.
+              Bengaluru with fastest walk-in or runner delivery options.
             </p>
 
+            {/* Quick Location & Delivery Speed Indicator */}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-600">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100/80 px-3 py-1 text-emerald-900 border border-emerald-200">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-600 animate-ping" />
+                ⚡ Locate fastest pickup (15–30 mins) in:
+              </span>
+              <span className="rounded-md bg-white border border-slate-200 px-2 py-0.5 text-slate-700">Indiranagar</span>
+              <span className="rounded-md bg-white border border-slate-200 px-2 py-0.5 text-slate-700">Koramangala</span>
+              <span className="rounded-md bg-white border border-slate-200 px-2 py-0.5 text-slate-700">Jayanagar</span>
+              <span className="rounded-md bg-white border border-slate-200 px-2 py-0.5 text-slate-700">Malleshwaram</span>
+            </div>
+
             {/* Global Autocomplete Search Bar */}
-            <div className="mx-auto pt-2 flex justify-center">
+            <div className="mx-auto pt-1 flex justify-center">
               <MedicineSearchBar />
             </div>
 
@@ -46,25 +58,25 @@ export default function HomePage() {
             <div className="pt-3 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-500">
               <span className="font-semibold text-slate-700">Popular chronic searches:</span>
               <Link
-                href="/compare/m0000000-0000-0000-0000-000000000001"
+                href="/compare/m0000000-0000-0000-0000-000000000001?sortBy=distance"
                 className="rounded-full bg-white border border-slate-200 px-3 py-1 font-medium text-slate-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors shadow-2xs"
               >
-                Augmentin 625 Duo
+                Augmentin 625 Duo (Fastest)
               </Link>
               <Link
-                href="/compare/m0000000-0000-0000-0000-000000000005"
+                href="/compare/m0000000-0000-0000-0000-000000000005?sortBy=distance"
                 className="rounded-full bg-white border border-slate-200 px-3 py-1 font-medium text-slate-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors shadow-2xs"
               >
                 Glycomet 500
               </Link>
               <Link
-                href="/compare/m0000000-0000-0000-0000-000000000008"
+                href="/compare/m0000000-0000-0000-0000-000000000008?sortBy=distance"
                 className="rounded-full bg-white border border-slate-200 px-3 py-1 font-medium text-slate-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors shadow-2xs"
               >
                 Telma 40
               </Link>
               <Link
-                href="/compare/m0000000-0000-0000-0000-000000000013"
+                href="/compare/m0000000-0000-0000-0000-000000000013?sortBy=distance"
                 className="rounded-full bg-white border border-slate-200 px-3 py-1 font-medium text-slate-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors shadow-2xs"
               >
                 Atorva 10
