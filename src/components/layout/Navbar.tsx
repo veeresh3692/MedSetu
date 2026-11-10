@@ -8,6 +8,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { LocateNearbyPharmacyButton } from '@/components/location/LocateNearbyPharmacyButton';
 
 export function Navbar() {
   return (
@@ -60,7 +61,8 @@ export function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex items-center gap-4 text-sm font-medium">
+        <nav className="flex items-center gap-3 text-sm font-medium">
+          <LocateNearbyPharmacyButton variant="navbar" />
           <Link
             href="/"
             className="text-slate-600 hover:text-emerald-600 transition-colors hidden md:inline-block"
@@ -74,7 +76,7 @@ export function Navbar() {
             Jan Aushadhi Generics
           </Link>
           <Link
-            href="/pharmacy/login"
+            href="/pharmacy"
             className="rounded-lg border border-emerald-600 px-3.5 py-1.5 text-xs font-semibold text-emerald-700 hover:bg-emerald-50 transition-colors"
           >
             Chemist Portal

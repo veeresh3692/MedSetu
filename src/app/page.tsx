@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { MedicineSearchBar } from '@/components/search/MedicineSearchBar';
+import { LocateNearbyPharmacyButton } from '@/components/location/LocateNearbyPharmacyButton';
 
 export default function HomePage() {
   return (
@@ -52,6 +53,11 @@ export default function HomePage() {
             {/* Global Autocomplete Search Bar */}
             <div className="mx-auto pt-1 flex justify-center">
               <MedicineSearchBar />
+            </div>
+
+            {/* Direct Locate Me Nearby Pharmacy Shops Action */}
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <LocateNearbyPharmacyButton label="Locate Me Nearby Pharmacy Shops" />
             </div>
 
             {/* Quick Search Chips */}
